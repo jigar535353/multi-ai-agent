@@ -11,12 +11,19 @@ load_dotenv()
 
 api_key=os.getenv("OPEN_AI_API_KEY")
 
-from langchain_google_genai import ChatGoogleGenerativeAI
-import os
+#from langchain_google_genai import ChatGoogleGenerativeAI
+#import os
 
-llm = ChatGoogleGenerativeAI(
-    model="gemini-2.5-flash",
-    google_api_key=api_key
+#llm = ChatGoogleGenerativeAI(
+    #model="gemini-2.5-flash",
+    #google_api_key=api_key
+#)
+from langchain_groq import ChatGroq
+
+llm = ChatGroq(
+    model="llama-3.3-70b-versatile",
+    temperature=0,
+    api_key=api_key
 )
 
 #1st agent
