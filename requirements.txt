@@ -49,3 +49,6 @@ langchain-community>=0.2.0
 langchain-openai>=0.1.0
 langchain-google-genai
 langchain-mistralai
+
+langchain-groq>=0.3.0
+groq>=0.30.0
